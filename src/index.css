@@ -21,13 +21,11 @@ body {
   src: local("../public/fonts/Roboto-Bold.ttf");
 }
 
-#container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column-reverse;
+.App {
+  padding: 40px;
 }
 
-.todoListMain .header input {
+.todo-list__header input {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #fff;
@@ -35,7 +33,7 @@ body {
   outline: none;
 }
 
-.todoListMain .header button {
+.todo-list__header button {
   padding: 10px;
   font-size: 16px;
   margin: 10px;
@@ -46,13 +44,13 @@ body {
   transition: 0.3s;
 }
 
-.todoListMain .header button:hover {
+.todo-list__header button:hover {
   background-color: #003399;
   border: 2px solid #003399;
   cursor: pointer;
 }
 
-.theList {
+.todo-list {
   padding: 0;
   list-style: none;
   display: inline-flex;
@@ -60,7 +58,7 @@ body {
   flex-direction: column-reverse;
 }
 
-.theList li {
+.todo-list li {
   color: #ffffff;
   background-color: rgba(240, 52, 52, 1);
   padding: 15px;
@@ -73,11 +71,10 @@ body {
   transition: 0.3s;
 }
 
-.theList li.done {
+.todo-list li.done {
   background-color: rgba(42, 187, 155, 1);
 }
 
-.todoListMain .theList li:hover {
-  background-color: pink;
+.todo-list li:hover {
   cursor: pointer;
 }
