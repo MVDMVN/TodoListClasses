@@ -3,7 +3,6 @@ import TodoList from "./components/TodoList";
 import TodoItems from "./components/TodoItems";
 
 class App extends Component {
-  inputElement = React.createRef();
   constructor() {
     super();
     this.state = {
@@ -75,7 +74,6 @@ class App extends Component {
       <div className="App">
         <TodoList
           addItem={this.addItem}
-          inputElement={this.inputElement}
           handleInput={this.handleInput}
           currentItem={this.state.currentItem}
         />
